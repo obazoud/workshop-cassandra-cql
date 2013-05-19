@@ -2,50 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="954e2d2a-4d67-436f-ab3c-b64c32137ad3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_core_1_0_0_beta1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_high_scale_lib_high_scale_lib_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jamm_0_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_13_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_0_8_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_stanford_ppl_snaptree_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_all_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_thrift_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_deps_avro_1_4_0_cassandra_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/AbstractTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraNodeDiscoveryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_3_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_assert_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easytesting_fest_util_1_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/scripts/column_families.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/scripts/data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/scripts/keyspace.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/fr/xebia/xke/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/fr/xebia/xke/AppTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_core_1_0_0_beta1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_cassandra_cassandra_driver_core_1_0_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_13_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_thrift_1_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_thrift_1_2_3.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workshop-cassandra-cql.iml" afterPath="$PROJECT_DIR$/workshop-cassandra-cql.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workshop-cassandra-cql.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1366196036745" ignored="false" />
-    <file path="/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1366196296503" ignored="false" />
+    <file path="/Dummy.txt" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368951039626" ignored="false" />
+    <file path="/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805975592" ignored="false" />
+    <file path="/README.md" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368955306442" ignored="false" />
+    <file path="/AbstractTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368476934348" ignored="false" />
+    <file path="/keyspace.txt" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368477035531" ignored="false" />
+    <file path="/CassandraDaoTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368479257828" ignored="false" />
+    <file path="/a.dummy" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368952076573" ignored="false" />
+    <file path="/tracks.txt" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368477758928" ignored="false" />
+    <file path="/CassandraDao.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368479329920" ignored="false" />
+    <file path="/fragment.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368799020145" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-webapp/src/main/dev-resources/on-override.properties" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368708336105" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/stub/GooglePlayStub.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368715186425" ignored="false" />
+    <file path="/GooglePlayStub.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368796464632" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/stub/SubscriptionPurchaseWrapper.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368715186425" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/model/src/main/java/com/libon/server/api/resource/VerifyPurchaseResource.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368807362528" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/GooglePlayClientFactory.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/orange/client-ocf-rdp/src/test/java/com/orangevallee/on/orange/OcfRdpClientFactoryTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924231" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/exception/CommunicationProviderException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803330659" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/apple/client-apple/src/main/java/com/orangevallee/on/apple/AppleClientFactory.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924231" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/GooglePlayClient.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/stub/GooglePlayOperation.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924231" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-at-utils/src/main/java/com/libon/server/api/at/api/VerifyPurchaseApiClient.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/common/filter/V2ForwardFilter.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/facebook/client-facebook/src/main/java/com/libon/server/facebook/stub/FacebookClientStub.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/libon/server/api/spring/configuration/ProcessOneClientFactory.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/serviceoption/purchase/VerifyOptionPurchaseFacade.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/libon/server/api/spring/configuration/EmailServiceFactory.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/test/java/com/orangevallee/on/serviceoption/purchase/VerifyOptionPurchaseFacadeTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803759708" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-webapp/src/main/java/com/libon/server/api/purchase/VerifyPurchaseResourceImpl.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/orange/client-ocf-rdp/src/main/java/com/orangevallee/on/orange/OcfRdpClientFactory.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-at-utils/src/main/java/com/libon/server/client/androidplay/stub/JmsGooglePlayResponder.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/twitter/client-twitter/src/main/java/com/libon/server/twitter/stub/TwitterClientStub.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/streamwide/client-streamwide/src/main/java/com/orangevallee/on/client/streamwide/impl/StreamWideClientStub.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/apple/client-apple/src/main/java/com/orangevallee/on/apple/impl/AppleClientStub.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/common/exception/mapper/OnDoesNotExistsExceptionMapper.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/acceptance/src/at/java/com/libon/server/at/api/purchase/VerifyPurchaseIT.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368801031833" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-webapp/src/test/java/com/libon/server/api/purchase/VerifyPurchaseResourceImplTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714924232" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/resources/voxon-applicationContext.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368807524344" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-at-utils/src/main/java/com/libon/server/api/at/LibonServer.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811990" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-webapp/src/main/java/com/libon/server/api/resource/user/VerifyPurchaseResourceImpl.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368714958149" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="/*.regexp" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368807392065" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/acceptance/src/main/resources/on-at.properties" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="/on-at.properties" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368796745289" ignored="false" />
+    <file path="/GooglePlayClientFactory.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368799099130" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/resources/on.properties" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="/on.properties" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368797337417" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/test/java/com/libon/server/client/androidplay/GooglePlayClientImplTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368798875010" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/GooglePlayClientImpl.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803483693" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/test/java/com/libon/server/client/androidplay/GooglePlayClientOneOffTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368800700554" ignored="false" />
+    <file path="/GooglePlayClientImpl.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803483032" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/resources/logback-test.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368797520597" ignored="false" />
+    <file path="/GooglePlayClientImplTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368798854937" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/test/java/com/libon/server/client/androidplay/GooglePlayClientFactoryTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="/GooglePlayClientFactoryTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368800528689" ignored="false" />
+    <file path="/voxon-applicationContext.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368807524344" ignored="false" />
+    <file path="/GooglePlayClientOneOffTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368800933643" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play-it/src/test/java/com/libon/server/client/androidplay/OptionsPurchaseIT.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368800749177" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/test/java/com/libon/server/client/androidplay/GooglePlayClientOneIT.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368800847991" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/test/java/com/libon/server/client/androidplay/GooglePlayClientIT.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368800856835" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play-it/src/test/java/com/libon/server/client/androidplay/GooglePlayClientIT.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368802536343" ignored="false" />
+    <file path="/VerifyOptionPurchaseFacade.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803864151" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play-it/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/exception/TokenNotFoundException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803745053" ignored="false" />
+    <file path="/TokenNotFoundException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803736533" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/googleplay/client-play/src/main/java/com/libon/server/client/androidplay/exception/GooglePlayException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803145259" ignored="false" />
+    <file path="/GooglePlayException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803144113" ignored="false" />
+    <file path="/CommunicationProviderException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803329760" ignored="false" />
+    <file path="/VerifyOptionPurchaseFacadeTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803721955" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/acceptance-admin/src/main/resources/activemq.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811990" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/acceptance/src/main/resources/activemq.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/common/exception/ServiceNotFoundException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811990" ignored="false" />
+    <file path="/ServiceNotFoundException.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368803906912" ignored="false" />
+    <file path="/PurchaseExpiredExceptionMapper.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368804154111" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/common/exception/mapper/PurchaseExpiredExceptionMapper.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/model/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152469" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/resource/VmsFilerService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152469" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/mblox/client-mblox/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/resource/ResourceService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/voicemail/CreateAudioResourceImpl.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/smsnotification/SmsService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-at-utils/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811989" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/user/contactpoint/IdentifierValidationService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/vvm/CarrierService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/smsnotification/mblox/MBloxNotificationBuilder.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/vvm/CarrierEntity.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152470" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806810132" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/vvm/CarrierDao.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/smsnotification/mblox/MBloxSmsService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/smsnotification/twilio/TwilioSmsService.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/twilio/client-twilio/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-core/src/main/java/com/orangevallee/on/util/SoundHelper.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368805152471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/client/sms/client-sms/pom.xml" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368804633172" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../libon/onserver/libon-at-utils/src/main/java/com/libon/server/api/at/LibonSession.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368806811988" ignored="false" />
+    <file path="/column_families.txt" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368954812042" ignored="false" />
+    <file path="/CassandraExecutor.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368955981184" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/fr/xebia/xke/model.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368953390912" ignored="false" />
+    <file path="/CassandraWriterTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368955633058" ignored="false" />
+    <file path="/CassandraNodeDiscoveryTest.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368954495565" ignored="false" />
+    <file path="/CassandraWriter.java" changelist="954e2d2a-4d67-436f-ab3c-b64c32137ad3" time="1368955953576" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,26 +187,88 @@
     <favorites_list name="workshop-cassandra-cql" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="45" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.68441063">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/xke/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="AbstractTest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/AbstractTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="127" selection-start="887" selection-end="982" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="method#session#0;class#AbstractTest#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CassandraWriter.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/xke/cassandra/CassandraWriter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="83" column="22" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.83435583">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#CassandraWriter#0;class#CassandraWriter#0" expanded="true" />
+                    <element signature="method#writeUserWithBoundStatement#0;class#CassandraWriter#0" expanded="true" />
+                    <element signature="method#writeTrackWithQueryBuilder#0;class#CassandraWriter#0" expanded="true" />
+                    <element signature="method#writeUsersWithBatches#0;class#CassandraWriter#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CassandraWriterTest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraWriterTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="33" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#setUp#0;class#CassandraWriterTest#0" expanded="true" />
+                    <element signature="method#should_write_user#0;class#CassandraWriterTest#0" expanded="true" />
+                    <element signature="method#should_write_tracks#0;class#CassandraWriterTest#0" expanded="true" />
+                    <element signature="method#should_batch_write_likes#0;class#CassandraWriterTest#0" expanded="true" />
+                    <element signature="method#should_write_likes_asynchronously#0;class#CassandraWriterTest#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="keyspace.txt" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/scripts/keyspace.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="column_families.txt" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/scripts/column_families.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="35" column="9" selection-start="626" selection-end="626" vertical-scroll-proportion="0.65543073">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="15" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -143,13 +287,27 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/test" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/AbstractTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/scripts/keyspace.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/xebia/xke/cassandra/WorkshopDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/scripts/tracks.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/xebia/xke/cassandra/CassandraDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraExecutorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/xebia/xke/cassandra/CassandraExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraNodeDiscoveryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/scripts/column_families.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraWriterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/xebia/xke/cassandra/CassandraWriter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="950" />
+    <option name="width" value="1920" />
+    <option name="height" value="976" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -179,6 +337,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,11 +374,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop-cassandra-cql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop-cassandra-cql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xke" />
+              <option name="myItemId" value="cassandra" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,28 +448,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xke" />
+              <option name="myItemId" value="cassandra" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.projectsettings.compiler.annotationProcessors" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xke/March2013/cassandra-xke-handson" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/scripts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -299,6 +490,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -327,19 +531,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -394,34 +585,34 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="950" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="976" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21771611" sideWeight="0.98834497" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -485,17 +676,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/xke/App.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/datastax/cassandra/cassandra-driver-core/1.0.0-beta1/cassandra-driver-core-1.0.0-beta1.jar!/com/datastax/driver/core/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/datastax/cassandra/cassandra-driver-core/1.0.0-beta1/cassandra-driver-core-1.0.0-beta1-sources.jar!/com/datastax/driver/core/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="344" column="65" selection-start="14108" selection-end="14108" vertical-scroll-proportion="3.1084337" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="45" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.68441063">
+        <state line="34" column="20" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/scripts/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/AbstractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="127" selection-start="887" selection-end="982" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#session#0;class#AbstractTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar!/org/apache/commons/lang/math/RandomUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="13" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.26086956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/scripts/keyspace.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraNodeDiscoveryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0931677">
+          <folding>
+            <element signature="method#should_discover_new_node#0;class#CassandraNodeDiscoveryTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="15" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/scripts/column_families.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="9" selection-start="626" selection-end="626" vertical-scroll-proportion="0.65543073">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/xke/cassandra/CassandraWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="33" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#CassandraWriterTest#0" expanded="true" />
+            <element signature="method#should_write_user#0;class#CassandraWriterTest#0" expanded="true" />
+            <element signature="method#should_write_tracks#0;class#CassandraWriterTest#0" expanded="true" />
+            <element signature="method#should_batch_write_likes#0;class#CassandraWriterTest#0" expanded="true" />
+            <element signature="method#should_write_likes_asynchronously#0;class#CassandraWriterTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/xke/cassandra/CassandraWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="22" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.83435583">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CassandraWriter#0;class#CassandraWriter#0" expanded="true" />
+            <element signature="method#writeUserWithBoundStatement#0;class#CassandraWriter#0" expanded="true" />
+            <element signature="method#writeTrackWithQueryBuilder#0;class#CassandraWriter#0" expanded="true" />
+            <element signature="method#writeUsersWithBatches#0;class#CassandraWriter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
