@@ -54,18 +54,17 @@ Padbol.
 Sujet du Workshop
 =================
 
-Nous sommes une petite startup qui souhaite créer un spinoff de LastFM qui sera bien entendu bien supérieur,
-et qui risque donc d'avoir rapidement des millions d'utilisateurs. Nous avons donc choisi Cassandra dont on a entendu
-qu'il était très performant et linéaire.
+Nous sommes une startup ambitieuse qui souhaite créer un spinoff de LastFM,
+bien entendu supérieur.
 
-Le but de l'exercice est de faire passer les tests unitaires (dans l'ordre des méthodes dans la classe).
+Nous estimons que la demande nous apportera plusieurs millions d'utilisateurs
+très rapidement. Nous avons donc choisi Cassandra, réputé pour ses performances
+et sa scalabilité linéaire.
 
-Pour chaque exercice, vous allez devoir créer une column family. Puis y insérer des données, et enfin les lire,
-en utilisant différentes techniques.
+Le but de l'exercice est de faire passer les tests unitaires (dans l'ordre des
+méthodes dans la classe).
 
-
-
-
-
+Pour chaque exercice, vous allez devoir créer une column family. Puis y insérer
+des données, et enfin les lire, en utilisant différentes techniques.
 
 
