@@ -22,7 +22,6 @@ public class AbstractTest {
     public static void init() {
         cluster = com.datastax.driver.core.Cluster.builder() //
                     .addContactPoints(HOST)//
-                    .withPort(PORT) //
                     .build();
         session = cluster.connect(KEYSPACE);
     }

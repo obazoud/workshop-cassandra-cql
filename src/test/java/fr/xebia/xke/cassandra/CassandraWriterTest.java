@@ -2,26 +2,33 @@ package fr.xebia.xke.cassandra;
 
 
 import static org.fest.assertions.Assertions.assertThat;
+import java.io.File;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.UUID;
 import com.datastax.driver.core.Row;
 import com.datastax.driver.core.querybuilder.Clause;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
+import fr.xebia.xke.cassandra.model.User;
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Before;
 import org.junit.Test;
 
 public class CassandraWriterTest extends AbstractTest {
 
-    private CassandraWriter dao;
+    private CassandraWriter writer;
 
     @Before
     public void setUp() throws Exception {
-        dao = new CassandraWriter(session());
+        writer = new CassandraWriter(session());
     }
 
     @Test
-    public void should_write_user() {
-
+    public void should_write_user_with_statement() throws Exception {
+        InputStream resourceAsStream = getClass().getResourceAsStream("data/user1.json");
+        User user = JacksonReader.readJsonFile(User.class, new File(resourceAsStream));
+        writer.writeUserWithBoundStatement(UUID.randomUUID(), user.getName(),
+                user.getEmail(), RandomUtils.nextInt(100));
     }
 
     @Test
