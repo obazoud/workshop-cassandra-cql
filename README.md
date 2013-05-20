@@ -1,14 +1,20 @@
 Workshop Cassandra
-======================
+==================
 
 Installer Cassandra
-========
+===================
 
 La version 1.2 de Cassandra :  http://www.apache.org/dyn/closer.cgi?path=/cassandra/1.2.4/apache-cassandra-1.2.4-bin.tar.gz
 
-Ajoutez CASSANDRA_HOME (racine du répertoire Cassandra) dans l'environnement et
-    $CASSANDRA_HOME/bin (%CASSANDRA_HOME%/bin pour Windows)
-dans le path.
+Ajoutez Cassandra dans le PATH :
+
+    $ export CASSANDRA_HOME=<...racine du répertoire Cassandra...>
+    $ export PATH=$PATH:$CASSANDRA_HOME/bin
+
+ou, pour les amateurs de Windows :
+
+    set CASSANDRA_HOME=<...racine du répertoire Cassandra...>
+    set PATH=%PATH%;%CASSANDRA_HOME\bin
 
 Pour activer le protocole CQL natif remplacez dans $CASSANDRA_HOME/cassandra.yaml :
 
