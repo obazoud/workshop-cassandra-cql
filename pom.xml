@@ -32,10 +32,25 @@
         <version>1.0.0</version>
     </dependency>
     <dependency>
+        <groupId>org.xerial.snappy</groupId>
+        <artifactId>snappy-java</artifactId>
+        <version>1.0.4.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-mapper-asl</artifactId>
+        <version>1.9.2</version>
+    </dependency>
+    <dependency>
         <groupId>org.easytesting</groupId>
         <artifactId>fest-assert</artifactId>
         <version>1.4</version>
         <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.17</version>
     </dependency>
     <dependency>
         <groupId>junit</groupId>
@@ -60,6 +75,26 @@
                 </descriptorRefs>
             </configuration>
         </plugin>
+        <!--<plugin>-->
+            <!--<groupId>org.jboss.tattletale</groupId>-->
+            <!--<artifactId>tattletale-maven</artifactId>-->
+            <!--&lt;!&ndash; The version of the plugin you want to use &ndash;&gt;-->
+            <!--<version>1.1.0.Final</version>-->
+            <!--<executions>-->
+                <!--<execution>-->
+                    <!--<goals>-->
+                        <!--<goal>report</goal>-->
+                    <!--</goals>-->
+                <!--</execution>-->
+            <!--</executions>-->
+            <!--<configuration>-->
+                <!--&lt;!&ndash; This is the location which will be scanned for generating tattletale reports-->
+                  <!--&ndash;&gt;-->
+                <!--<source>.</source>-->
+                <!--&lt;!&ndash; This is where the reports will be generated &ndash;&gt;-->
+                <!--<destination>./target/tattle</destination>-->
+            <!--</configuration>-->
+        <!--</plugin>-->
     </plugins>
 </build>
 

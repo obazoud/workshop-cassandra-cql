@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 import com.datastax.driver.core.*;
+import com.datastax.driver.core.querybuilder.Batch;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
 
 public class CassandraWriter {
@@ -15,12 +16,27 @@ public class CassandraWriter {
         this.session = session;
     }
 
-    public void writeUserWithBoundStatement(UUID id, String name, String email, String password, Integer age) {
-        PreparedStatement preparedStatement = session.prepare("INSERT INTO user(uuid,name,email,password, age) VALUES (?,?,?,?)");
-        BoundStatement boundStatement = preparedStatement.bind(id, name, email, password, age);
+    public void writeUserWithBoundStatement(UUID id, String name, String email, Integer age) {
+        PreparedStatement preparedStatement = session.prepare("INSERT INTO user(uuid,name,email, age) VALUES (?,?,?,?)");
+        BoundStatement boundStatement = preparedStatement.bind(id, name, email, age);
         boundStatement.setConsistencyLevel(ConsistencyLevel.ANY);
 
         session.execute(boundStatement);
+    }
+
+    public ResultSet readUsersWithQueryBuilder() {
+        return session.execute(QueryBuilder.select().all().from("user"));
+    }
+
+    public void batchWriteUsers(List<String> insertQueries) {
+        Batch batch = QueryBuilder.batch();
+        for (String insertQuery : insertQueries) {
+            batch.add(new SimpleStatement(insertQuery));
+        }
+        batch.setConsistencyLevel(ConsistencyLevel.ALL)
+        .enableTracing();
+
+        session.execute(batch);
     }
 
     public void writeTrackWithQueryBuilder(UUID id, String title, Date release,
@@ -35,36 +51,20 @@ public class CassandraWriter {
         session.execute(insert);
     }
 
-    public void writeUsersWithBatches() {
-        String insert1 = QueryBuilder.insertInto("cql3_user") //
-                .value("id", 100001L) //
-                .value("firstname", "FN1") //
-                .value("lastname", "LN1") //
-                .value("age", 31) //
-                .toString();
+    public void writeToClickStreamWithTTL(UUID userId, Date when, String url, String referer) {
+        session.execute(QueryBuilder.insertInto("user_click_stream")
+                .value("user_id", userId)
+                .value("when", when)
+                .value("url", url)
+                .value("referer", referer)
+                .using(QueryBuilder.ttl(3600)));
+    }
 
-        String insert2 = QueryBuilder.insertInto("cql3_user") //
-                .value("id", 100002L) //
-                .value("firstname", "FN2") //
-                .value("lastname", "LN2") //
-                .value("age", 32)//
-                .toString();
-
-        String insert3 = QueryBuilder.insertInto("cql3_user") //
-                .value("id", 100003L) //
-                .value("firstname", "FN3") //
-                .value("lastname", "LN3") //
-                .value("age", 33)//
-                .toString();
-
-        Query batch = QueryBuilder //
-                .batch(new SimpleStatement(insert1)) //
-                .add(new SimpleStatement(insert2))//
-                .add(new SimpleStatement(insert3))//
-                .setConsistencyLevel(ConsistencyLevel.ALL)//
-                .enableTracing();
-
-        session.execute(batch);
+    public ResultSet readClickStreamByTimeframe(UUID userId, Date start, Date end) {
+        return session.execute(QueryBuilder.select().from("user_click_stream")
+                .where(QueryBuilder.eq("user_id", userId))
+                .and(QueryBuilder.gt("when", start))
+                .and(QueryBuilder.lt("when", end)));
     }
 
     public ResultSetFuture writeAndReadLikesAsynchronously(UUID id, List<UUID> tracks) {
