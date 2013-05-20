@@ -62,9 +62,40 @@ très rapidement. Nous avons donc choisi Cassandra, réputé pour ses performanc
 et sa scalabilité linéaire.
 
 Le but de l'exercice est de faire passer les tests unitaires (dans l'ordre des
-méthodes dans la classe).
+méthodes dans la classe CassandraExecutor).
 
-Pour chaque exercice, vous allez devoir créer une column family. Puis y insérer
-des données, et enfin les lire, en utilisant différentes techniques.
+Pour chaque exercice, vous allez devoir créer les columns families nécessaires.
+Puis y insérer et en lire des données, en utilisant différentes techniques correspondant
+au nom des méthodes.
+
+La documentation du driver Datastax se trouve à : http://www.datastax.com/doc-source/developer/java-driver/
+
+Exercice 1 :
+
+Ecrire dans la table des users avec un statement statique.
+
+Exercice 2 :
+
+Lire de la table des users
+
+Exercice 3 :
+
+Insérer une track et sa collection de tags avec.
+
+Exercice 4 :
+
+Ecrire dans la table du click stream avec un TTL d'1h
+
+Exercice 5 :
+
+Lire de la table des click streams entre 2 timestamps
+
+Exercice 6 :
+
+Ecrire et des likes de user sur des tracks, de manière asynchrone
+
+Exercice 7 :
+
+Spawner un second noeud, et écrire des users en mode batch
 
 

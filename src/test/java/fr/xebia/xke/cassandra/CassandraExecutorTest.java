@@ -62,8 +62,6 @@ public class CassandraExecutorTest extends AbstractTest {
         }
     }
 
-
-
     @Test
     public void should_write_likes_asynchronously() throws Exception {
         ResultSet usersQuery = session().execute(QueryBuilder.select().column("id").from("user").limit(100));
