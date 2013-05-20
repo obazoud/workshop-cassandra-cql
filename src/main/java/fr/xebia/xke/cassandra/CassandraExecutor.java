@@ -30,17 +30,6 @@ public class CassandraExecutor {
         ));
     }
 
-    public void batchWriteUsers(List<String> insertQueries) {
-        Batch batch = QueryBuilder.batch();
-        for (String insertQuery : insertQueries) {
-            batch.add(new SimpleStatement(insertQuery));
-        }
-        batch.setConsistencyLevel(ConsistencyLevel.ALL)
-        .enableTracing();
-
-        session.execute(batch);
-    }
-
     public void writeTrackWithQueryBuilder(UUID id, String title, Date release,
                                            Float duration, Set<String> tags) {
         Query insert = QueryBuilder.insertInto("tracks") //
@@ -53,12 +42,11 @@ public class CassandraExecutor {
         session.execute(insert);
     }
 
-    public void writeToClickStreamWithTTL(UUID userId, Date when, String url, String referer) {
+    public void writeToClickStreamWithTTL(UUID userId, Date when, String url) {
         session.execute(QueryBuilder.insertInto("user_click_stream")
                 .value("user_id", userId)
                 .value("when", when)
                 .value("url", url)
-                .value("referer", referer)
                 .using(QueryBuilder.ttl(3600)));
     }
 
@@ -73,7 +61,7 @@ public class CassandraExecutor {
         for (UUID track : tracks) {
             session.executeAsync(
                 QueryBuilder.insertInto("track_likes")
-                    .value("id", id)
+                    .value("user_id", id)
                     .value("track_id", track)
             );
         }
@@ -84,5 +72,16 @@ public class CassandraExecutor {
                         .from("track_likes")
                         .limit(1000)
         );
+    }
+
+    public void batchWriteUsers(List<String> insertQueries) {
+        Batch batch = QueryBuilder.batch();
+        for (String insertQuery : insertQueries) {
+            batch.add(new SimpleStatement(insertQuery));
+        }
+        batch.setConsistencyLevel(ConsistencyLevel.ALL)
+                .enableTracing();
+
+        session.execute(batch);
     }
 }
