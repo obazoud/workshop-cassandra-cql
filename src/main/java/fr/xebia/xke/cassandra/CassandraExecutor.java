@@ -8,24 +8,26 @@ import com.datastax.driver.core.*;
 import com.datastax.driver.core.querybuilder.Batch;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
 
-public class CassandraWriter {
+public class CassandraExecutor {
 
     private final Session session;
 
-    public CassandraWriter(Session session) {
+    public CassandraExecutor(Session session) {
         this.session = session;
     }
 
     public void writeUserWithBoundStatement(UUID id, String name, String email, Integer age) {
-        PreparedStatement preparedStatement = session.prepare("INSERT INTO user(uuid,name,email, age) VALUES (?,?,?,?)");
+        PreparedStatement preparedStatement = session.prepare("INSERT INTO user(id,name,email, age) VALUES (?,?,?,?)");
         BoundStatement boundStatement = preparedStatement.bind(id, name, email, age);
         boundStatement.setConsistencyLevel(ConsistencyLevel.ANY);
 
         session.execute(boundStatement);
     }
 
-    public ResultSet readUsersWithQueryBuilder() {
-        return session.execute(QueryBuilder.select().all().from("user"));
+    public ResultSet readUserWithQueryBuilder(UUID id) {
+        return session.execute(QueryBuilder.select().all().from("user").where(
+                QueryBuilder.eq("id", id)
+        ));
     }
 
     public void batchWriteUsers(List<String> insertQueries) {

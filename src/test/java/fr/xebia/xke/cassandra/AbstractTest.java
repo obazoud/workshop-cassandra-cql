@@ -34,7 +34,7 @@ public class AbstractTest {
 
         for (Row row : rows)
         {
-            session.execute(new SimpleStatement("truncate " + row.getString("columnfamily_name")));
+            //session.execute(new SimpleStatement("truncate " + row.getString("columnfamily_name")));
         }
     }
 
