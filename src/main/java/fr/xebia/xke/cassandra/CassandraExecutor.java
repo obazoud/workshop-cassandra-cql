@@ -27,7 +27,7 @@ public class CassandraExecutor {
                                            Float duration, Set<String> tags) {
     }
 
-    public void writeToClickStreamWithTTL(UUID userId, Date when, String url) {
+    public void writeToClickStreamWithTTL(UUID userId, Date when, String url, Integer ttl) {
     }
 
     public ResultSet readClickStreamByTimeframe(UUID userId, Date start, Date end) {

@@ -24,8 +24,7 @@ create table user_click_stream (
     user_id uuid
     , when timestamp
     , url varchar
-    , referer varchar
-    , PRIMARY KEY(user_id, when, url)
+    , PRIMARY KEY(user_id, when)
 );
 
 /* Column Family Liked Tracks */

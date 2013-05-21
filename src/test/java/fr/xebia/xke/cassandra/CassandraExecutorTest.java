@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.net.URL;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.ResultSetFuture;
 import com.datastax.driver.core.Row;
@@ -17,6 +18,7 @@ import fr.xebia.xke.cassandra.model.Track;
 import fr.xebia.xke.cassandra.model.User;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.log4j.Logger;
+import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -25,11 +27,11 @@ public class CassandraExecutorTest extends AbstractTest {
 
     Logger logger = Logger.getLogger(CassandraExecutorTest.class);
 
-    private CassandraExecutor writer;
+    private CassandraExecutor executor;
 
     @Before
     public void setUp() throws Exception {
-        writer = new CassandraExecutor(session());
+        executor = new CassandraExecutor(session());
     }
 
     @Test
@@ -42,16 +44,15 @@ public class CassandraExecutorTest extends AbstractTest {
     public void should_read_user() throws Exception {
         User user = loadUser(1);
         writeUser(user);
-        ResultSet rows = writer.readUserWithQueryBuilder(user.getId());
+        ResultSet rows = executor.readUserWithQueryBuilder(user.getId());
         assertEquals(user.getId(), rows.one().getUUID("id"));
     }
 
     @Test
     public void should_write_track() throws Exception {
-
         Set<Track> tracks = loadTracks();
         for (Track track : tracks) {
-            writer.writeTrackWithQueryBuilder(track.getId(), track.getName(),
+            executor.writeTrackWithQueryBuilder(track.getId(), track.getName(),
                     track.getRelease(), track.getDuration(), track.getTags());
             Clause filterById = QueryBuilder.eq("id", track.getId());
             String select = QueryBuilder.select("title", "release", "duration", "tags")
@@ -60,6 +61,43 @@ public class CassandraExecutorTest extends AbstractTest {
             Row row = session().execute(select).all().get(0);
             assertThat(row.getString("title")).isEqualTo(track.getName());
         }
+    }
+
+    @Test
+    public void should_write_click_stream_with_ttl() throws Exception {
+        ResultSet usersQuery = session().execute(QueryBuilder.select().column("id").from("user").limit(1));
+        List<Row> allUsers = usersQuery.all();
+        for(int i = 0; i < 10; i++) {
+            UUID id = allUsers.get(i).getUUID("id");
+            for(int j = 0; j < 10; j++) {
+                executor.writeToClickStreamWithTTL(id, DateTime.now().toDate(),
+                        "http://localhost/" + i + "/" + j, j);
+            }
+            getRowsFromClickStream(id);
+            TimeUnit.SECONDS.sleep(2);
+            logger.info("Waited two seconds...");
+            getRowsFromClickStream(id);
+        }
+
+    }
+
+    @Test
+    public void should_read_click_stream() throws Exception {
+        ResultSet usersQuery = session().execute(QueryBuilder.select().column("id").from("user").limit(1));
+        List<Row> allUsers = usersQuery.all();
+        for(int i = 0; i < 10; i++) {
+            UUID id = allUsers.get(i).getUUID("id");
+            for(int j = 0; j < 10; j++) {
+                executor.writeToClickStreamWithTTL(id,
+                        DateTime.now().plusSeconds(j).toDate(),
+                        "http://localhost/" + i + "/" + j, 100);
+            }
+            ResultSet rows = executor.readClickStreamByTimeframe(id, DateTime.now().plusSeconds(4).toDate(),
+                    DateTime.now().plusSeconds(10).toDate());
+            List<Row> all = rows.all();
+            logger.info("Found : " + all.size() + " links in the stream");
+        }
+
     }
 
     @Test
@@ -72,7 +110,7 @@ public class CassandraExecutorTest extends AbstractTest {
             trackIds.add(row.getUUID("id"));
         }
         for (Row row : usersQuery) {
-            ResultSetFuture id = writer.writeAndReadLikesAsynchronously(row.getUUID("id"), trackIds);
+            ResultSetFuture id = executor.writeAndReadLikesAsynchronously(row.getUUID("id"), trackIds);
             ResultSet rows = id.get();
             logger.info(rows.all().size());
         }
@@ -94,7 +132,7 @@ public class CassandraExecutorTest extends AbstractTest {
                     .value("age", RandomUtils.nextInt(100))//
                     .toString());
         }
-        writer.batchWriteUsers(queries);
+        executor.batchWriteUsers(queries);
     }
 
 
@@ -128,8 +166,21 @@ public class CassandraExecutorTest extends AbstractTest {
     }
 
     private void writeUser(User user) {
-        writer.writeUserWithBoundStatement(user.getId(), user.getName(),
+        executor.writeUserWithBoundStatement(user.getId(), user.getName(),
                 user.getEmail(), RandomUtils.nextInt(100));
     }
 
+    private void getRowsFromClickStream(UUID id) {
+        ResultSet user_click_stream1 = session().execute(QueryBuilder.select().all().from("user_click_stream").where(
+                QueryBuilder.eq("user_id", id)
+        ));
+        List<Row> all = user_click_stream1.all();
+        for (Row row : all) {
+            logger.info(
+                    "id : " + row.getUUID("user_id") +
+                            ", when : " + row.getDate("when") +
+                            ", url : " + row.getString("url")
+            );
+        }
+    }
 }
