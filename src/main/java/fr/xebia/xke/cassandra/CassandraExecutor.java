@@ -42,12 +42,12 @@ public class CassandraExecutor {
         session.execute(insert);
     }
 
-    public void writeToClickStreamWithTTL(UUID userId, Date when, String url) {
+    public void writeToClickStreamWithTTL(UUID userId, Date when, String url, Integer ttl) {
         session.execute(QueryBuilder.insertInto("user_click_stream")
                 .value("user_id", userId)
                 .value("when", when)
                 .value("url", url)
-                .using(QueryBuilder.ttl(3600)));
+                .using(QueryBuilder.ttl(ttl)));
     }
 
     public ResultSet readClickStreamByTimeframe(UUID userId, Date start, Date end) {
