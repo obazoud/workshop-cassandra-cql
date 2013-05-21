@@ -67,25 +67,22 @@ public class CassandraExecutorTest extends AbstractTest {
     public void should_write_click_stream_with_ttl() throws Exception {
         ResultSet usersQuery = session().execute(QueryBuilder.select().column("id").from("user").limit(1));
         List<Row> allUsers = usersQuery.all();
-        for(int i = 0; i < 10; i++) {
-            UUID id = allUsers.get(i).getUUID("id");
-            for(int j = 0; j < 10; j++) {
-                executor.writeToClickStreamWithTTL(id, DateTime.now().toDate(),
-                        "http://localhost/" + i + "/" + j, j);
-            }
-            getRowsFromClickStream(id);
-            TimeUnit.SECONDS.sleep(2);
-            logger.info("Waited two seconds...");
-            getRowsFromClickStream(id);
+        UUID id = allUsers.get(0).getUUID("id");
+        for(int j = 0; j < allUsers.size(); j++) {
+            executor.writeToClickStreamWithTTL(id, DateTime.now().toDate(),
+                    "http://localhost/" + 0 + "/" + j, j);
         }
-
+        getRowsFromClickStream(id);
+        TimeUnit.SECONDS.sleep(3);
+        logger.info("Waited 3 seconds...");
+        getRowsFromClickStream(id);
     }
 
     @Test
     public void should_read_click_stream() throws Exception {
-        ResultSet usersQuery = session().execute(QueryBuilder.select().column("id").from("user").limit(1));
+        ResultSet usersQuery = session().execute(QueryBuilder.select().column("id").from("user").limit(5));
         List<Row> allUsers = usersQuery.all();
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < allUsers.size(); i++) {
             UUID id = allUsers.get(i).getUUID("id");
             for(int j = 0; j < 10; j++) {
                 executor.writeToClickStreamWithTTL(id,
@@ -95,7 +92,7 @@ public class CassandraExecutorTest extends AbstractTest {
             ResultSet rows = executor.readClickStreamByTimeframe(id, DateTime.now().plusSeconds(4).toDate(),
                     DateTime.now().plusSeconds(10).toDate());
             List<Row> all = rows.all();
-            logger.info("Found : " + all.size() + " links in the stream");
+            logger.info("Found : " + all.size() + " links in the stream of user " + id);
         }
 
     }
