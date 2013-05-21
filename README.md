@@ -84,7 +84,7 @@ Insérer une track et sa collection de tags avec.
 
 Exercice 4 :
 
-Ecrire dans la table du click stream avec un TTL d'1h
+Ecrire dans la table du click stream avec le ttl précisé
 
 Exercice 5 :
 
